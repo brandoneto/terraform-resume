@@ -3,7 +3,7 @@ kind: Runner
 metadata:
   name: texlive-runboy
 spec:
-  repository: brandoneto/terraform-resume
+  repository: brandoneto/resume
   image: ghcr.io/brandoneto/runner-x:20220916.1
   imagePullPolicy: IfNotPresent
   dockerEnabled: false
