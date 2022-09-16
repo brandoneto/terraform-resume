@@ -38,4 +38,4 @@ jobs:
     
     - name: Terraform Apply
       run: |
-        terraform apply "tfplan" -input=false
+        terraform apply -input=false "tfplan" 
