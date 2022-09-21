@@ -34,14 +34,6 @@ jobs:
       with: 
         repository: brandoneto/terraform-resume
 
-    - run: |
-        echo $GITHUB_WORKSPACE
-        ls -l /home/runner/work
-        cd /home/runner/work/resume
-        ls -l
-        cd /home/runner/work/resume/resume
-        ls -l
-
     - name: Terraform Destroy
       run: |
         terraform init -backend-config=key=${{ matrix.env  }}.tfvars
