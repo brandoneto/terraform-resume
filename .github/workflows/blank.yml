@@ -7,4 +7,4 @@ on:
 jobs:
 
   desorty-step:
-    uses: ./.github/workflows/destory.yml@master
+    uses: ./.github/workflows/destory.yml
