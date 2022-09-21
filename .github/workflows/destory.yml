@@ -26,7 +26,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        # working-directory: terraform-resume/aks-simple
+        working-directory: aks-simple
 
     steps:
     - name: Checkout
