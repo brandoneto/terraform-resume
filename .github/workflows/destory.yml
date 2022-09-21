@@ -26,12 +26,17 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: terraform-resume/aks-simple
+        # working-directory: terraform-resume/aks-simple
 
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - run: pwd
+    - run: |
+        ls -l /home/runner/work
+        cd /home/runner/work/resume
+        ls -l
+        cd /home/runner/work/resume/resume
+        ls -l
 
     - name: Terraform Destroy
       run: |
