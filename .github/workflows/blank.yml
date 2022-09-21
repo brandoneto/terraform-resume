@@ -11,8 +11,8 @@ env:
   ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
 jobs:
-  runs-on: unbuntu-latest
   working:
+    runs-on: ubuntu-latest
     steps: 
       - run: pwd
   desorty-step:
