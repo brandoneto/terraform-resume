@@ -11,8 +11,9 @@ env:
   ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
 jobs:
-  steps: 
-    - run: pwd
+  working:
+    steps: 
+      - run: pwd
   desorty-step:
     uses: ./.github/workflows/destory.yml
     secrets: inherit
