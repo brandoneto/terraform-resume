@@ -11,7 +11,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   resource_group_name     = azurerm_resource_group.rg[0].name
   node_resource_group     = var.node_resource_group
   dns_prefix              = var.aks_dns_prefix
-  kubernetes_version      = var.aks_k8s_version
+  # kubernetes_version      = var.aks_k8s_version
   sku_tier                = var.aks_sku_tier
   private_cluster_enabled = var.private_cluster_enabled
   
