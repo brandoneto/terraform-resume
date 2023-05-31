@@ -28,7 +28,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     name                         = var.aks_sys_node_pool_name
     node_count                   = var.aks_sys_node_count
     vm_size                      = var.aks_sys_vm_size
-    orchestrator_version         = var.aks_k8s_version
+    # orchestrator_version         = var.aks_k8s_version
     max_pods                     = var.aks_max_pods
     min_count                    = var.aks_sys_min_count 
     max_count                    = var.aks_sys_max_count
