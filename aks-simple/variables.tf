@@ -12,7 +12,7 @@ variable "tags" {}
 variable "aks_app_node_pool_name" {}
 variable "aks_app_vm_size" {}
 variable "aks_app_node_count" {}
-variable "aks_k8s_version" {}
+# variable "aks_k8s_version" {}
 variable "aks_max_pods" {}
 variable "aks_sys_min_count" {}
 variable "aks_sys_max_count" {}
